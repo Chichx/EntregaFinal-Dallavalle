@@ -8,78 +8,109 @@
     <title>Locos por el fútbol</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/3c88a73403.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
+
 <body>
-    <header>
-        <h1>Locos por el fútbol</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <!--  ToDo: Submenu  -->
-                <li><a href="">Camisetas</a>
-                    <ul><a href="./views/remerasretros.html">Retro</a></ul>
-                    <ul><a href="./views/remerasactuales.html">Actuales</a></ul>
+  <header class="navbar navbar-expand-md bg-body-tertiary color-n">
+    <div class="container">
+      <a class="navbar-brand" href="#">Locos por el fútbol</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li><a href="./views/botines.html">Botines</a></li>
-                <li><a href="./views/faq.html">FAQ</a></li>
-                <li><a href="./views/contacto.html">Contacto</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Camisetas
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./views/remerasactuales.html">Actuales</a></li>
+                      <li><a class="dropdown-item" href="./views/remerasretros.html">Retros</a></li>
+                  </ul>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./views/botines.html">Botines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./views/faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./views/contacto.html">Contacto</a>
+              </li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
 
     <main>
-        <h2 class="main-titulo">Locos por el fútbol</h2>
+      <div class="contenedor">
+        <h2 class="main-titulo animacion-titulos">Locos por el fútbol</h2>
         <p class="main-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laboriosam debitis quo dolores
             exercitationem dignissimos dolorum voluptatum culpa voluptatem voluptates nam quas optio, rem aperiam eos,
             ipsam blanditiis earum odit.</p>
-        <div class="contenedor">
+        <div class="contenedor-botones">
         <button class="main-boton1">Contacto</button>
         <button class="main-boton2">FAQ</button>
         </div>
+        </div>
 
-        <section>
-            <h3>Lo más nuevo</h3>
 
-            <!-- TODO: Carousel-->
-            <div class="border">
+        <div class="div-nuevo">
+          <h3 class="animacion-titulos">Lo más nuevo</h3>
+        <section class="contenedor-nuevo">
+
+            <div class="border-nuevo">
                 <img src="images/actuales/remerabelgrano.webp" alt="Camiseta de Belgrano">
                 <div>
                 <h4>Camiseta de Belgrano</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span>Precio</span>
-                <button class="btn">Comprar</button>
+                <button class="boton-nuevo">Comprar</button>
                 </div>
             </div>
 
-            <div class="border">
+            <div class="border-nuevo">
                 <img src="images/botines/botinesadidasx.webp" alt="Botines Adidas X">
                 <h4>Botines Adidas X</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span>Precio</span>
-                <button class="btn">Comprar</button>
+                <button class="boton-nuevo">Comprar</button>
             </div>
 
-            <div class="border">
+            <div class="border-nuevo">
                 <img src="images/retros/argentina1994.webp" alt="Camiseta de Argentina 1994">
                 <h4>Camiseta de Argentina 1994</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span>Precio</span>
-                <button class="btn">Comprar</button>
+                <button class="boton-nuevo">Comprar</button>
             </div>
 
-            <div class="border">
-                <img src="" alt="">
+            <div class="border-nuevo">
+                <img src="images/actuales/bayern23.webp" alt="Camiseta Bayern 2022/23">
                 <h4>Producto #4</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <span>Precio</span>
-                <button class="btn">Comprar</button>
+                <button class="boton-nuevo">Comprar</button>
             </div>
+
+            <div class="border-nuevo">
+              <img src="images/botines/botinesadidasxspeedflow.webp" alt="Botines Adidas X Speedflow">
+              <h4>Producto #5</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <span>Precio</span>
+              <button class="boton-nuevo">Comprar</button>
+          </div>
+          
         </section>
-
-
-
+      </div>
     </main>
 
     <footer>
@@ -90,7 +121,7 @@
 
 
         <h4>Locos por el futbol</h4>
-        <div class="redes">
+        <div class="contenedor-redes">
             <a class="redes" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a class="redes" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a class="redes" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -99,7 +130,7 @@
 
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>
