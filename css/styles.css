@@ -1,9 +1,22 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Light.ttf);
 }
 
-/* ::-webkit-scrollbar{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    background-color: #1D2026;
+}
+
+ ::-webkit-scrollbar{
     width: 8px;
     color:#b17b3d;
     transition: all .4s ease;
@@ -19,7 +32,7 @@ body {
     background: #fff; 
     border-radius: 8px;
     width: 8px;
-  } */
+  } 
 
 li, ol {
     list-style: none;
@@ -28,8 +41,14 @@ li, ol {
 /*
 Nav bar
 */
+
+.navbar {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
 .navbar.color-n {
-    background-color: #af7d44 !important;
+    background-color: #e0861f !important;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -43,22 +62,14 @@ Nav bar
     color: #FFF;
 }
 
-.navbar-toggler-icon {
-    color: #000000;
-}
-
-.navbar-toggler {
-    background-color: #000000;
-}
-
 /*
 Main
 */
 
 .main-titulo{
     text-align: center;
-    color: #af7d44;
-    text-shadow: 0 0px 10px #af7d44;
+    color: #e0861f;
+    text-shadow: 0 0px 10px #e0861f;
 }
 
 .main-descripcion {
@@ -87,9 +98,9 @@ Main
 .main-boton1 {
     margin-left: 5px;
     text-decoration: none;
-    background-color: #af7d44;
+    background-color: #e0861f;
     color: white;
-    border: 1px solid #af7d44;
+    border: 1px solid #e0861f;
     border-radius: 5px;
     padding: 8px 16px;
 }
@@ -103,18 +114,18 @@ Main
     text-decoration: none;
     background-color: transparent;
     color: white;
-    border: 1px solid #af7d44;
+    border: 1px solid #e0861f;
     border-radius: 5px;
     padding: 8px 16px;
 }
 
 .main-boton2:hover {
-    background-color: #af7d44;
+    background-color: #e0861f;
 }
 
 .div-nuevo h3 {
     text-align: center;
-    color: #af7d44;
+    color: #e0861f;
     margin-bottom: 1rem;
 }
 
@@ -138,10 +149,11 @@ Main
     width: 340px; /* Ancho del contenedor */
     text-align: center;
     padding: 10px;
+    margin-right: 10px;
 }
 
 .border-nuevo:hover {
-    border-color: #af7d44;
+    border-color: #e0861f;
     margin-top: 1px;
 }
 
@@ -155,7 +167,7 @@ Main
 }
 
 .border-nuevo h4,h3 {
-    color: #af7d44;
+    color: #e0861f;
     text-align: center;
 }
 
@@ -163,7 +175,7 @@ Main
     display: block;
     text-align: center;
     font-size: 0.9rem;
-    color: #af7d44;
+    color: #e0861f;
     padding: 15px;
     position: relative;
     bottom: 15px;
@@ -175,9 +187,9 @@ Main
 
 .boton-nuevo {
     text-decoration: none;
-    background-color: #af7d44;
+    background-color: #e0861f;
     color: white;
-    border: 1px solid #af7d44;
+    border: 1px solid #e0861f;
     border-radius: 5px;
     display: block;
     margin: 0 auto;
@@ -187,7 +199,7 @@ Main
   }
 
 .volver-al-inicio {
-    color: #af7d44;
+    color: #e0861f;
     text-decoration: none;
     padding-top: 20px;
     padding-left: 5px;
@@ -206,7 +218,7 @@ button {
 FAQ
 */
 .faq h3 {
-    color: #af7d44;
+    color: #e0861f;
     text-align: center;
 }
 
@@ -219,13 +231,13 @@ FAQ
 Footer
 */
 footer {
-    background-color: #af7d44;
+    background-color: #e0861f;
 }
 
 footer div button {
     text-decoration: none;
     background-color: #fff;
-    color: #af7d44;
+    color: #e0861f;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     display: block;
@@ -254,10 +266,10 @@ footer div a {
     margin: 0.5rem;
     font-size: 20px;
     padding: 5px 10px;
-    border: solid 1px #af7d44;
+    border: solid 1px #e0861f;
     border-radius: 50%;
     background-color: #1D2026;
-    color:#af7d44;
+    color:#e0861f;
 }
 
 .redes:hover {
