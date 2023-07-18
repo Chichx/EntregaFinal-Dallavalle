@@ -1,0 +1,57 @@
+.contenedor__lomasnuevo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include todoslosdispositivos {
+    flex-wrap: wrap;
+  }
+
+  &--border {
+    border: solid 2px $color-blanco;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: border-color 0.3s, margin-top 0.3s;
+    width: 340px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+
+    &:hover {
+      border-color: $color-naranja-principal;
+      margin-top: 1px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 250px; 
+      border-radius: 20px; 
+    }
+
+    h4, h3 {
+      color: $color-naranja-principal;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      font-size: 0.9rem;
+      color: $color-naranja-principal;
+      padding: 15px;
+      position: relative;
+      bottom: 15px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+}

@@ -1,13 +1,10 @@
 @import "./base";
 
-@import "./components/footer";
-@import "./components/header";
+@import "./components/navbar";
 @import "./components/lomasnuevo";
 @import "./components/productos";
+@import "./components/botones";
+@import "./components/footer";
 
-@import "./views/botines";
-@import "./views/contacto";
-@import "./views/faq";
 @import "./views/index";
-@import "./views/remerasactuales";
-@import "./views/remerasretros";
+@import "./views/contacto";
