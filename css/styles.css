@@ -405,6 +405,7 @@ ol {
   background-attachment: fixed;
   height: 75vh;
   overflow-clip-margin: content-box;
+  object-fit: cover;
 }
 .contenedor__titulo {
   text-align: center;
