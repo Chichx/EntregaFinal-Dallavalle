@@ -51,6 +51,10 @@ ol {
     -o-trasnform: translateY(5px);
   }
 }
+.accordion-button {
+  color: #e0861f !important;
+}
+
 .navbar {
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
@@ -90,8 +94,9 @@ ol {
   transition: border-color 0.3s, margin-top 0.3s;
   width: 340px;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .contenedor__lomasnuevo--border:hover {
   border-color: #e0861f;
@@ -407,11 +412,11 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/backgroud2.jpg);
+  background-image: url(../images/backgroud.jpg);
   background-attachment: fixed;
   height: 75vh;
   overflow-clip-margin: content-box;
-  object-fit: cover;
+  object-fit: contain;
 }
 .contenedor__titulo {
   text-align: center;
@@ -419,6 +424,9 @@ ol {
   text-shadow: 0 0px 10px #e0861f;
 }
 .contenedor__descripcion {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 320px;
   text-align: center;
   color: #fff;
 }
